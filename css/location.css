@@ -1,0 +1,246 @@
+@import url('https://fonts.googleapis.com/css2?family=Familjen+Grotesk:wght@400;600;700&display=swap');
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/img/location-rolex.webp") center/cover fixed no-repeat;
+  transition: background 0.5s ease;
+}
+
+.section-animate {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.section-inner-center {
+  text-align: center;
+  color: #fff;
+}
+
+/* Rest of your CSS styles */
+
+  a[href]::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    background: #fff;
+    width: 0;
+    height: 1px;
+    transition: width 0.6s ease;
+  }
+  
+  a[href]:hover::after {
+    width: 100%;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3);
+  }
+  
+  .note {
+    margin-top: 30px;
+    color: #fff;
+    font-size: 1rem;
+    font-family: "Merriweather", sans-serif;
+    line-height: 1.5;
+    text-align: center;
+  }
+  
+  .cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .card {
+    width: 350px;
+    height: 350px;
+    margin: 20px;
+    position: relative;
+    border-radius: 3px;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3);
+    overflow: hidden;
+  }
+  
+  .thumb {
+    width: auto;
+    height: 260px;
+    background: url("/img/background-location.webp") no-repeat center;
+    background-size: cover;
+    border-radius: 3px;
+  }
+  
+  .thumb-jkt {
+    width: auto;
+    height: 260px;
+    background: url("/img/background-jkt.jpeg") no-repeat center;
+    background-size: cover;
+    border-radius: 3px;
+  }
+
+  .thumb-london {
+    width: auto;
+    height: 260px;
+    background: url("/img/background-london.jpg") no-repeat center;
+    background-size: cover;
+    border-radius: 3px;
+  }
+
+  .thumb-aussie {
+    width: auto;
+    height: 260px;
+    background: url("/img/background-aussie.jpeg") no-repeat center;
+    background-size: cover;
+    border-radius: 3px;
+  }
+
+  .thumb-kl {
+    width: auto;
+    height: 260px;
+    background: url("/img/background-kl.jpg") no-repeat center;
+    background-size: cover;
+    border-radius: 3px;
+  }
+
+  .thumb-sg {
+    width: auto;
+    height: 260px;
+    background: url("/img/background-sg.jpeg") no-repeat center;
+    background-size: cover;
+    border-radius: 3px;
+  }
+  .infos {
+    width: auto;
+    height: 350px;
+    position: relative;
+    padding: 14px 24px;
+    background: #fff;
+    transition: transform 0.6s ease;
+  }
+  
+  .title {
+    position: relative;
+    margin: 10px 0;
+    letter-spacing: 3px;
+    color: #152536;
+    font-family: "Grotesque Black", sans-serif;
+    font-size: 1rem;
+    text-transform: uppercase;
+    text-shadow: 0 0 0px #30464d;
+  }
+  
+  .flag {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+    width: 35px;
+    height: 23px;
+    background: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/397014/flag.png") no-repeat top right;
+    background-size: 100% auto;
+    display: inline-block;
+  }
+  .flag-indo{
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+    width: 35px;
+    height: 23px;
+    background: url("/img/Indonesia_flag_300.png") no-repeat top right;
+    background-size: 100% auto;
+    display: inline-block;
+    border: #152536;
+  }
+
+  .flag-london{
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+    width: 35px;
+    height: 23px;
+    background: url("/img/great-britain-flag_171867-201.avif") no-repeat top right;
+    background-size: 100% auto;
+    display: inline-block;
+    border: #152536;
+  }
+  
+  .flag-aussie{
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+    width: 35px;
+    height: 23px;
+    background: url("/img/australia.png") no-repeat top right;
+    background-size: 100% auto;
+    display: inline-block;
+    border: #152536;
+  }
+
+  .flag-malaysia{
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+    width: 35px;
+    height: 23px;
+    background: url("/img/1200px-Flag_of_Malaysia.png") no-repeat top right;
+    background-size: 100% auto;
+    display: inline-block;
+    border: #152536;
+  }
+
+  .flag-sg{
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+    width: 35px;
+    height: 23px;
+    background: url("/img/2560px-Flag_of_Singapore_\(bordered\).svg.png") no-repeat top right;
+    background-size: 100% auto;
+    display: inline-block;
+    border: #152536;
+  }
+  
+
+  .txt {
+    font-family: "Merriweather", sans-serif;
+    line-height: 2;
+    font-size: 0.95rem;
+    color: rgba(21, 37, 54, 0.7);
+    opacity: 0;
+    text-transform: none;
+    transition: opacity 0.6s ease;
+  }
+  
+  .details {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    margin: 10px 0;
+    padding: 20px 24px;
+    letter-spacing: 1px;
+    color: #4e958b;
+    font-family: "Grotesque Black", sans-serif;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    cursor: pointer;
+    opacity: 0;
+    transition: opacity 0.6s ease;
+  }
+  
+  .card:hover .infos {
+    transform: translateY(-260px);
+  }
+  
+  .card:hover .infos .seats,
+  .card:hover .infos .txt,
+  .card:hover .infos .details {
+    opacity: 1;
+  }
+  

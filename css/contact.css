@@ -1,0 +1,266 @@
+@import url('https://fonts.googleapis.com/css2?family=Familjen+Grotesk:wght@400;600;700&display=swap');
+main
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 90%;
+    margin: auto;
+}
+
+
+body
+{
+    padding-top: 175px;
+    font-family: 'Familjen Grotesk', sans-serif;
+    background: #000;
+    color: #ffffff;
+    text-shadow: 2px 2px 4px rgba(95, 92, 92, 0.5);
+
+}
+
+a
+{
+    text-decoration: none;
+    color: #f5f5f5;
+}
+
+
+a:hover
+{
+    color: #fac527;
+}
+
+.hide
+{
+    display: none;
+}
+
+.title
+{
+    font-size: 50px;
+    text-shadow: 2px 2px 4px rgba(95, 92, 92, 0.5);
+    font-weight: bold;
+    padding: 1.5% 0;
+}
+
+.title-info
+{
+	padding-bottom: 2%;
+}
+
+.form
+{
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    padding: 2%;
+}
+.input-group select {
+  color: inherit;
+  width: 100%;
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid #ffffff;
+  padding: 1.5%;
+  font-size: 16px; 
+  font-family: 'Familjen Grotesk', sans-serif;
+}
+
+  
+  .input-group select:focus {
+    background-color: transparent;
+    outline: transparent;
+    color: #000;
+    border-bottom: 2px solid #fac527;
+  }
+  
+  .input-group label {
+    color: #ffffff;
+    position: relative;
+    left: 0.5em;
+    top: -2em;
+    cursor: auto;
+    transition: 0.3s ease all;
+  }
+  
+  .input-group select:focus ~ label,
+  .input-group select:not(:placeholder-shown) ~ label {
+    top: -4em;
+    color: #fac527;
+    font-size: 15px;
+  }
+.input-group, .textarea-group
+{
+    margin-top: 6vw;
+    padding: 1% 0;
+}
+
+.tnc{
+    padding-top: 55px;
+}
+.tnc-text{
+    color: #fac527;
+}
+.checkbox-group {
+    display: flex;
+    align-items: center;
+    
+  }
+  
+  .checkbox-group input[type="checkbox"] {
+    margin-right: 5px;
+    align-self: center;
+  }
+  
+  .checkbox-group label {
+    font-size: 14px;
+    color: #fac527;
+    align-self: center;
+  }
+input, textarea
+{
+    color: inherit;
+    width: 100%;
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid #ffffff;
+    padding: 1.5%;
+    font-size: 16px;
+}
+
+input:focus, textarea:focus
+{
+    background-color: transparent;
+    outline: transparent;
+    border-bottom: 2px solid #fac527;
+}
+
+input::placeholder, textarea::placeholder
+{
+    color: transparent;
+}
+
+label
+{
+    color: #ffffff;
+    position: relative;
+    left: 0.5em;
+    top: -2em;
+	cursor: auto;
+    transition: 0.3s ease all;
+}
+
+input:focus ~ label, input:not(:placeholder-shown) ~ label
+{
+    top: -4em;
+    color: #fac527;
+    font-size: 15px;
+}
+
+textarea:focus ~ label, textarea:not(:placeholder-shown) ~ label
+{
+    top: -10.5em;
+    color: #fac527;
+    font-size: 15px;
+}
+
+.button-div
+{
+    display: flex;
+    justify-content: center;
+}
+
+.button-spesial
+{
+    padding: 2%;
+    width: 50%;
+    border: 1px solid;
+    border-color: #212121;
+    border-radius: 5px;
+    font-family: inherit;
+    font-size: 18px;
+    background-color: black;
+    color: inherit;
+    box-shadow: 0 0 10px #212121;
+}
+
+button:hover
+{
+    background-color: #424242;
+    color: #fac527;
+    cursor: pointer;
+}
+
+
+/* Media queries */
+
+@media screen and (max-width: 600px) {
+    .input-group select {
+      font-size: 16px;
+    }
+  }
+  
+@media screen and (max-width: 1200px)
+{
+    .form
+    {
+        width: 70%;
+    }
+}
+
+@media screen and (max-width: 680px)
+{
+    .form
+    {
+		width: 90%;
+    }
+}
+
+@media screen and (max-width: 500px)
+{
+	.title
+	{
+		font-size: 40px;
+		padding-top: 6%;
+	}
+
+	.title-info
+	{
+		font-size: 13px;
+	}
+	
+	.form
+	{
+		padding: 6% 4%;
+		padding-top: 15%;
+	}
+
+	.input-group, .textarea-group
+    {
+		padding: 3% 0;
+	}
+	
+	input, textarea
+	{
+		font-size: 15px;
+	}
+
+	input:focus ~ label, input:not(:placeholder-shown) ~ label
+	{
+		top: -3.5em;
+		left: 0.1em;
+	}
+	
+	textarea:focus ~ label, textarea:not(:placeholder-shown) ~ label
+	{
+		top: -8.5em;
+		left: 0.2em;
+    }
+    
+    button
+    {
+        font-size: 15px;
+    }
+}
