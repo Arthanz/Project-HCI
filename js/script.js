@@ -58,49 +58,9 @@ function reset() {
   counters.forEach((counter) => (counter.innerHTML = '0'));
 }
 
-// Get the necessary elements
-const tickerWrapper = document.querySelector('.js-marquee-wrapper');
-const tickerList = document.querySelector('.ticker__list');
-
-// Clone the ticker list and append it to the wrapper
-const clonedTickerList = tickerList.cloneNode(true);
-tickerWrapper.appendChild(clonedTickerList);
-
-// Calculate the width of the ticker list
-let tickerWidth = 0;
-const tickerItems = tickerList.querySelectorAll('.ticker__item');
-tickerItems.forEach(item => {
-  tickerWidth += item.offsetWidth;
-});
-
-// Set the initial position of the ticker
-let currentPosition = 0;
-
-// Function to move the ticker
-function moveTicker() {
-  // Calculate the next position
-  currentPosition -= 1;
-
-  // Check if the entire ticker has passed
-  if (Math.abs(currentPosition) >= tickerWidth) {
-    currentPosition = 0;
-  }
-
-  // Apply the new position to the ticker wrapper
-  tickerWrapper.style.transform = `translateX(${currentPosition}px)`;
-
-  // Call the moveTicker function recursively
-  requestAnimationFrame(moveTicker);
-}
-
-// Call the moveTicker function to start the animation
-moveTicker();
-
-$(function () {
-  $(document).scroll(function () {
-    var $nav = $(".main-header");
-    $nav.toggleClass('scrolled', $(this).scrollTop() > $nav.height());
-  });
+$(document).on('scroll', function () {
+  var $nav = $(".main-header");
+  $nav.toggleClass('scrolled', $(this).scrollTop() > $nav.height());
 });
 
 window.addEventListener('load', function() {
