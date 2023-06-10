@@ -156,7 +156,7 @@ body {
     text-transform: uppercase;
     font-size: 0.85rem;
     color: rgba(21, 37, 54, 0.7);
-    font-family: "Grotesque Regular", sans-serif;
+    font-family: 'Familjen Grotesk', sans-serif;
   }
   
   .stock {
@@ -169,7 +169,7 @@ body {
   }
   
   .txt {
-    font-family: "Merriweather", sans-serif;
+    font-family: 'Familjen Grotesk', sans-serif;
     line-height: 2;
     font-size: 0.95rem;
     color: rgba(21, 37, 54, 0.7);

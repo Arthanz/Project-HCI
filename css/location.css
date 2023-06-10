@@ -209,7 +209,7 @@ body {
   
 
   .txt {
-    font-family: "Merriweather", sans-serif;
+    font-family: 'Familjen Grotesk', sans-serif;
     line-height: 2;
     font-size: 0.95rem;
     color: rgba(21, 37, 54, 0.7);
@@ -226,7 +226,7 @@ body {
     padding: 20px 24px;
     letter-spacing: 1px;
     color: #4e958b;
-    font-family: "Grotesque Black", sans-serif;
+    font-family: 'Familjen Grotesk', sans-serif;
     font-size: 0.9rem;
     text-transform: uppercase;
     cursor: pointer;
