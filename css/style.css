@@ -52,7 +52,6 @@ ul {
   text-transform: uppercase;
   height: 100px;
   padding: 0 30px;
-  /* box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.7);   */
 }
 
 .main-header.scrolled {
@@ -293,7 +292,7 @@ footer div.footer-container div.footer-right {
 }
 
 footer div.footer-container div.footer-right a {
-  margin-right: 15px; /* Adjust the spacing as per your preference */
+  margin-right: 15px;
   color: #aaa;
   text-transform: uppercase;
   font-size: 13px;
@@ -621,7 +620,7 @@ footer div.footer-container div.footer-right {
 /* Font styles */
 .footer__textbox {
   font-family: 'Familjen Grotesk', sans-serif;
-  text-transform: none; /* Added to prevent text from being in all caps */
+  text-transform: none; 
 }
 
 
@@ -665,7 +664,7 @@ footer div.footer-container div.footer-right {
   height: 100%;
   background-image: url('/img/desk-men.webp');
   background-size: cover;
-  opacity: 0.5; /* Adjust the opacity as needed */
+  opacity: 0.5; 
   z-index: -1;
 }
 
